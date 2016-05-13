@@ -5,6 +5,8 @@ import urllib
 import os
 import re
 
+#Dont forget to replace the [user_name] with the username.
+
 # Opens the BingWallpaper website
 with urllib.request.urlopen("http://bingwallpaper.com") as url:
 	webpage = url.read()
@@ -30,7 +32,7 @@ link = str(link)
 link = link.replace("1366x768","1920x1080")
 
 # Saves image in the local folder
-urllib.request.urlretrieve(link,"/home/avinash512/Pictures/Wallpapers/download.jpg")
+urllib.request.urlretrieve(link,"/home/[user_name]/Pictures/Wallpapers/download.jpg")
 
 # Change the Wallpaper to the newly downloaded image.
-os.system("/usr/bin/gsettings set org.gnome.desktop.background picture-uri file:/home/avinash512/Pictures/Wallpapers/download.jpg")
+os.system("/usr/bin/gsettings set org.gnome.desktop.background picture-uri file:/home/[user_name]/Pictures/Wallpapers/download.jpg")
