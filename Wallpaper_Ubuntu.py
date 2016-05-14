@@ -77,7 +77,7 @@ def find_comment(users_cron,com):
 		
 def modify_schedule(a):
 	users_cron    = CronTab(user=user_name)
-	cmd = "/usr/bin/python3 /home/"+user_name+"/Scripts/Wallpaper_Ubuntu.py"
+	cmd = "/usr/bin/python3 /home/"+user_name+"/Bing_Wallpapers/Wallpaper_Ubuntu.py"
 	if a:
 		flag,index = find_comment(users_cron,"13:00")
 		if not flag:
