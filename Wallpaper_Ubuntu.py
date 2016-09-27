@@ -28,7 +28,7 @@ def get_wallpaper_link():
     soup = BeautifulSoup(webpage,'lxml')
     # Gets the first div with the class panel the
     # (first div always contains the latest wallpaper
-    div = soup.findAll('div',attrs={"class":"panel"})[4]
+    div = soup.findAll('div',attrs={"class":"panel"})[0]
     # Gets the img tag inside the div tag (this contains the url of the image)
     img = div.contents[0].contents[0]
     # This gets the image url and stores it in link
