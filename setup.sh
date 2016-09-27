@@ -6,7 +6,7 @@ sudo apt install pip
 sudo pip install bs4
 sudo pip install urllib
 sudo mkdir /home/$U/Bing_Wallpaper2.0
-sudo cp $PWD/Wallpaper_Ubuntu.py /home/$U/Bing_Wallpaper2.0/ -r
+sudo cp $PWD/Wallpaper_Ubuntu.py /home/$U/Bing_Wallpaper2.0/
 SCRIPT_PATH=/home/$U/Bing_Wallpaper2.0/Wallpaper_Ubuntu.py
 sudo /usr/bin/python3 $SCRIPT_PATH
 mkdir /home/$U/Pictures/Bing-Wallpapers
